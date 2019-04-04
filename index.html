@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mine Sweeper</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body onload="init()">
+    <div class="game-container">
+        <div class="smiley" onclick="init()"></div>
+        <table class="center">
+            <tbody class="game-board"></tbody>
+        </table>
+    </div>
+
+    <div class="state-container">
+        <div class="timer">
+            <div class="currTime"></div>
+            <div class="bestScore"></div>
+        </div>
+
+        <div class="counters">
+                <span class = "minesCount">0</span> mines left, 
+                and <span class="shownCount">0</span> cells are shown
+            </div>
+
+        <div class="hints">
+            <button class="btnHints" onclick="handleHints(this)"><img src="img/hint.png" width="20" height="20"></button>
+            <button class="btnHints" onclick="handleHints(this)"><img src="img/hint.png" width="20" height="20"></button>
+            <button class="btnHints" onclick="handleHints(this)"><img src="img/hint.png" width="20" height="20"></button>
+        </div>
+
+        <div class="levels">
+            <button class="btnLevel" onclick="beginner(this)">beginner</button>
+            <button class="btnLevel" onclick="medium(this)">medium</button>
+            <button class="btnLevel" onclick="expert(this)">expert</button>
+        </div>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/background.png) no-repeat center center fixed; 
+    background-position: left bottom;
+    text-align: center;
+}
+
+.game-container {
+    display: inline-block;
+    padding: 25px 120px;
+    margin: 20px;
+    background-color: white;
+    background: rgba(255,255,255,.5);
+    border: 1px solid black;
+}
+
+.state-container {
+    float: left;
+    text-align: left;
+    padding: 15px;
+    margin: 20px 40px;
+    background-color: white;
+    background: rgba(255,255,255,.5);
+    border: 1px solid black;
+    font-family: 'Segoe UI';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: cursive;
+}
+
+.game-board td {
+    cursor: pointer;
+    width: 40px;
+    height:40px;
+    font-size:1.4em;
+}
+
+.green {
+    background-color: #a7d948;
+}
+
+.green.shown {
+    background-color: #d7b899;
+}
+
+.darkGreen {
+    background-color: #8ecc39;
+}
+
+.darkGreen.shown {
+    background-color: #e5c29f;
+}
+
+.timer {
+    margin: 15px;
+}
+
+.hints {
+    margin: 15px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border-radius: .5em;
+    border: 2px solid #e7e7e7;
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline:none;
+}
+
+button:hover {
+    background-color: #e7e7e7;
+}
+
+.disable-me {
+    pointer-events: none;
+}
+
+.hintSelect {
+    border: 1px solid black;
+}
+
+.smiley {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.chosen-level {
+    background-color: #e7e7e7;
+}
